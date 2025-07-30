@@ -101,5 +101,8 @@ public class kapangyarihanLyrics {
 	  // Name and Section
 	  System.out.println("Submitted By: Fabria, James Capito");
 	  System.out.println("Year & Section: BSIT-1A");
+
+	  /* Disclosure:
+   	  If you encounter any issues with the code above, please visit my GitHub repository: https://github.com/xJamessx/Java-Program for the source code. */ 
   }
 }
