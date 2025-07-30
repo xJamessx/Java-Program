@@ -96,5 +96,10 @@ public class kapangyarihanLyrics {
 	  System.out.println("(Nagsisilbi ka dapat)");
 	  System.out.println("Nagsisilbi ka dapat");
 	  System.out.println("Nagsisilbi ka dapat");
+	  System.out.println("\n");
+
+	  // Name and Section
+	  System.out.println("Submitted By: Fabria, James Capito");
+	  System.out.println("Year & Section: BSIT-1A");
   }
 }
