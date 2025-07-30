@@ -86,10 +86,14 @@ public class kapangyarihanLyrics {
 	  System.out.println("\n");
 
 	  // [Outro: Ben&Ben]
-	  System.out.println("Katotohanan, ang dapat mamuno (Nagsisilbi ka dapat)");
-	  System.out.println("Sa namumuno sa mamamayan (Nagsisilbi ka dapat)");
-	  System.out.println("Makatarungan ang dapat mamuno (Nagsisilbi ka dapat)");
-	  System.out.println("Sa namumuno sa mamamayan (Nagsisilbi ka dapat)");
+	  System.out.println("Katotohanan, ang dapat mamuno");
+	  System.out.println("(Nagsisilbi ka dapat)");
+	  System.out.println("Sa namumuno sa mamamayan");
+	  System.out.println("(Nagsisilbi ka dapat)");
+	  System.out.println("Makatarungan ang dapat mamuno");
+	  System.out.println("(Nagsisilbi ka dapat)");
+	  System.out.println("Sa namumuno sa mamamayan");
+	  System.out.println("(Nagsisilbi ka dapat)");
 	  System.out.println("Nagsisilbi ka dapat");
 	  System.out.println("Nagsisilbi ka dapat");
   }
