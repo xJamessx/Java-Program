@@ -1,0 +1,55 @@
+import java.util.Scanner;
+
+public class EmailChecker {
+	public static void main(String[] args) {
+		
+		Scanner emailCheck = new Scanner(System.in);
+		
+		System.out.println("Welcome to Email Checker!");
+		System.out.println("This program allows you to evaluate if an email is valid or invalid. \n You can also know what type of email it is that you have input.");
+						
+		System.out.print("Are you ready to begin? Y/N: ");
+		String yesOrNo = emailCheck.nextLine();
+		
+		if (yesOrNo.equalsIgnoreCase("Y")) {
+			System.out.println("Let's do this!");
+			
+			System.out.println("Please enter your email address.");
+			String email = emailCheck.nextLine();
+			int lastDot = email.lastIndexOf('.');
+			
+			if (email.contains("@") && lastDot != 1 && (email.charAt(email.lastIndexOf('.')) == '.') && (lastDot < email.length() - 1 || lastDot < email.length() - 2)) {
+				System.out.println("You have entered a valid email address.");
+				System.out.println("The email address has a domain extension of: " + email.substring(lastDot));
+				
+				if (email.contains("yahoo")) {
+					System.out.println("This is a Yahoo email address.");
+				} else if (email.contains("gmail")) {
+					System.out.println("This is a Gmail email address.");
+				} else if (email.contains("outlook") || email.contains("hotmail") || email.contains("live")) {
+					System.out.println("This is a Microsoft email address.");
+				} else if (email.endsWith(".edu") || email.endsWith(".edu.ph")) {
+					System.out.println("This is an EDU (school/university) email address.");
+				} else if (email.endsWith(".ph")) {
+					System.out.println("This is a Philippines (.PH) email address.");
+				} else if (email.endsWith(".org")) {
+					System.out.println("This is an Organization email address.");
+				} else if (email.endsWith(".gov")) {
+					System.out.println("This is a Government email address.");
+				} else if (email.endsWith(".net")) {
+					System.out.println("This is a Network email address.");
+				} else if (email.endsWith(".com")) {
+					System.out.println("This is a Commercial email address.");
+				} else {
+					System.out.println("This is a General email address.");
+				}
+			} else {
+				System.out.println("Invalid email address. Program terminated.");
+			}
+		} else if (yesOrNo.equalsIgnoreCase("N")) {
+			System.out.println("Action cancelled. Program terminated.");
+		} else {
+			System.out.println("Invalid input. Program terminated.");
+		}
+		emailCheck.close();
+	}
